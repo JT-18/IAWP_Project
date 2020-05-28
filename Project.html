@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Projects</title>
+	<style type="text/css">
+	body
+	{
+		background-image: url(assets/img/Project/Background.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#Title
+	{
+		text-align: center;
+		color: rgb(250,250,250);
+		font-family: Consolas;
+		font-size: 40px;
+		letter-spacing: 2px;
+		margin-left: 20%;
+		margin-right:20%;
+	}
+
+	#Heading
+	{
+		animation-name: apply;
+		animation-duration: 8s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes apply
+	{
+
+		25%
+		{border-left: 4px solid white;}
+		50%
+		{
+			border-left: 4px solid white;	
+			border-top:4px solid white;
+		}
+		75%
+		{
+			border-left: 4px solid white;	
+			border-top:4px solid white;
+			border-right: 4px solid white;
+		}
+		100%
+		{
+			border-left: 4px solid white;	
+			border-top:4px solid white;
+			border-right: 4px solid white;	
+			border-bottom: 4px solid white;
+		}
+	}
+
+	#P1
+	{
+		float: left;
+		width: 40%;
+		font-family: monospace;
+		font-size: 20px;
+		margin-left: 5px;
+		background-color: rgb(253, 255, 150);
+		opacity: 0.5;
+		transition-property:opacity;
+	}
+
+	#P1:hover
+	{
+		opacity: 1
+	}
+
+	#P2
+	{
+		float:right;
+		padding-right:10px;
+		margin-right:40px; 
+		font-family: monospace;
+		font-size: 20px;
+		width: 40%;
+		background-color: rgb(110, 188, 219);
+		opacity: 0.5;
+		transition-property:opacity;
+	}
+	#P2:hover
+	{
+		opacity: 1
+	}
+	</style>
+</head>
+<body>
+<div id="Title"><h1 id="Heading">My Projects</h1></div>
+<div id ="P1">
+	<h2 style="text-align: center;">Climate Classifier</h2>
+	<p style="text-indent: 10px;margin-left: 5px">The project was basic image classifier which when given an input image would classify the image into one of the 13 classes of the climate present in the world as per the <a href="">Koppen image classification</a>. The output was input image captioned with the climate which was present in that image.The key feature of our project was it would work on images which are taken on mobile phones and Cameras.The classifier could be used in websites which have large collection unlabelled images etc.</p>
+</div>
+
+<div id="P2">
+	<h2 style="text-align: center;">Photo-Police</h2>
+	<p style="text-indent: 10px;margin-left: 5px">The project detects if the photo fed to the model  as an input is photoshopped/manipulated or not.The output of the project is the input image with a label having the value of the amount of manipulation detected by the model in the given image.This project has numerous applications in the field of cyber-security and social media applications.Furthermore, we can extend this project to detect any manipulation in the videos which will curb the spread of fake videos and thus rumours and fake news. 
+	</p>	
+</div>
+</body>
+</html>
